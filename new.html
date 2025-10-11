@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  .typewriter {
+    font-family: monospace;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0;
+    animation:
+      typing 4s steps(15, end) forwards,
+      pause 1s forwards,
+      erase 4s steps(15, end) forwards,
+      pause 1s forwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 15ch }
+  }
+
+  @keyframes erase {
+    from { width: 15ch }
+    to { width: 0 }
+  }
+
+  @keyframes pause {
+    from { }
+    to { }
+  }
+</style>
+</head>
+<body>
+  <div class="typewriter">Hello, world!</div>
+</body>
+</html>
