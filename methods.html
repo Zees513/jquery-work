@@ -9,10 +9,10 @@
 
 
     <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquam, praesentium quasi ea natus quisquam soluta beatae nemo enim harum aspernatur quis. Quaerat atque deserunt illum mollitia minus debitis odit sapiente. Cupiditate repellat voluptatibus, accusamus repudiandae est ducimus sequi sint debitis vero possimus mollitia architecto doloribus dignissimos? At, odit eos.</p>
-    <button id="fadein">fadeIn</button>
-    <button id="fadeout">fadeOut</button>
-    <button id="fadetoggle">fadeToggle</button>
-    <button id="fadeto">fadeTo</button>
+    <button id="fadein">slideup</button>
+    <button id="fadeout">slidedown</button>
+    <button id="fadetoggle">slideToggle</button>
+   
 
 
 
@@ -25,20 +25,18 @@
     <script>
         $(document).ready(function(){
             $("#fadein").click(function(){
-                $("#para").fadeIn(1000)
+                $("#para").slideUp(1000)
             })
 
              $("#fadeout").click(function(){
-                $("#para").fadeOut(1000)
+                $("#para").slideDown(1000)
             })
 
              $("#fadetoggle").click(function(){
-                $("#para").fadeToggle(1000)
+                $("#para").slideToggle(1000)
             })
 
-             $("#fadeto").click(function(){
-                $("#para").fadeTo(1000,0.2)
-            })
+            
         })
     </script>
 </body>
